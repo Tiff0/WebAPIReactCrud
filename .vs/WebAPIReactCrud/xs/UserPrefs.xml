@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{DA8351B1-6687-4BFE-B08A-FFD4BAB41182}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebAPIReactCrud/Controllers/DonationCandidateController.cs">
+    <Files>
+      <File FileName="WebAPIReactCrud/Program.cs" Line="13" Column="22" />
+      <File FileName="WebAPIReactCrud/Startup.cs" Line="1" Column="1" />
+      <File FileName="WebAPIReactCrud/Properties/launchSettings.json" Line="1" Column="1" />
+      <File FileName="WebAPIReactCrud/Controllers/DonationCandidateController.cs" Line="26" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="WebAPIReactCrud" expanded="True">
+            <Node name="WebAPIReactCrud" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="DonationCandidateController.cs" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.WebAPIReactCrud PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
