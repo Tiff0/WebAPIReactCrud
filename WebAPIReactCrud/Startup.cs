@@ -23,15 +23,8 @@ namespace WebAPIReactCrud
             services.AddControllers();
 
             // Add service and create Policy with options
-            services.AddCors(options =>
-            {
-                options.AddPolicy("CorsPolicy",
-                    builder => builder
-                        .AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader());
-            });
-            
+            services.AddCors();
+
             // Register the Swagger services
             services.AddSwaggerDocument(config =>
             {
@@ -50,6 +43,9 @@ namespace WebAPIReactCrud
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.UseCors(options => 
+                options.WithOrigins("http://localhost:3000").AllowAnyMethod().AllowAnyMethod());
+            
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -58,8 +54,6 @@ namespace WebAPIReactCrud
             // Register the Swagger generator and the Swagger UI middlewares
             app.UseOpenApi();
             app.UseSwaggerUi3();
-            
-            app.UseCors("CorsPolicy");
             
             app.UseHttpsRedirection();
 
